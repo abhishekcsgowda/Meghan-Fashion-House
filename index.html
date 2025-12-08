@@ -1,198 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Meghan Fashion House — Women & Kids Boutique</title>
-  <meta name="description" content="Meghan Fashion House — Custom stitched blouses, lehengas, gowns and dresses for women and girls. Book fitting, read reviews, view our gallery.">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meghan Fashion House</title>
+  <meta name="description" content="Meghan Fashion House – Designer Blouses, Lehengas, Gowns, Kids Wear, Aari Work, Bridal Collection & Custom Stitching.">
+  <meta name="keywords" content="boutique, blouse stitching, bridal lehenga, aari work, maggam work, designer gowns, kids fashion, tailoring, custom stitching, bridal boutique">
+  <meta name="author" content="Meghan Fashion House">
   <style>
-    :root{--accent:#b76e79;--muted:#f6f5f7;--card:#ffffff}
-    *{box-sizing:border-box}
-    body{font-family:'Poppins',sans-serif;margin:0;color:#222;background:var(--muted)}
-    header.site-header{background:#111;color:#fff;padding:22px 18px;text-align:center}
-    header.site-header h1{margin:0;font-size:24px;letter-spacing:0.4px}
-    header.site-header p{margin:6px 0 0;opacity:0.9}
-    nav.site-nav{display:flex;gap:18px;justify-content:center;padding:12px 10px;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,0.06)}
-    nav.site-nav a{color:#222;text-decoration:none;font-weight:600}
-    .hero{height:420px;display:flex;align-items:center;justify-content:center;color:#fff;text-align:center;padding:24px;background-image:url('https://images.unsplash.com/photo-1542060749-593f9c0c1f6c?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center}
-    .hero .inner{backdrop-filter:blur(2px);background:rgba(0,0,0,0.25);padding:22px;border-radius:10px}
-    .hero h2{margin:0;font-size:34px}
-    .container{max-width:1100px;margin:32px auto;padding:0 16px}
-    .grid{display:grid;gap:18px}
-    .designs .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-    .card{background:var(--card);border-radius:12px;padding:12px;box-shadow:0 6px 22px rgba(22,22,22,0.06);text-align:center}
-    .card img{width:100%;height:220px;object-fit:cover;border-radius:10px}
-    .cta-row{display:flex;gap:12px;justify-content:center;margin-top:14px}
-    .btn{padding:10px 16px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
-    .btn-primary{background:var(--accent);color:#fff}
-    .btn-ghost{background:#fff;color:#222;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
-    .section-title{text-align:center;margin-bottom:12px}
-    .reviews{display:grid;grid-template-columns:1fr;gap:12px}
-    .testimonial{padding:14px;border-radius:10px;background:#fff}
-    footer.site-footer{text-align:center;padding:18px;background:#111;color:#fff;margin-top:36px}
-    /* gallery */
-    .gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px}
-    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
-    /* contact */
-    .contact-grid{display:grid;grid-template-columns:1fr 340px;gap:18px}
-    .contact-card{padding:16px;border-radius:10px;background:#fff}
-    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;margin-top:8px}
-    /* responsive */
-    @media(max-width:840px){.contact-grid{grid-template-columns:1fr}.hero{height:320px}.hero h2{font-size:24px}}
-    /* floating whatsapp */
-    .whatsapp-fixed{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:700;box-shadow:0 8px 28px rgba(0,0,0,0.18)}
-    /* booking modal simple */
-    .modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,0.45)}
-    .modal.open{display:flex}
-    .modal .panel{width:100%;max-width:520px;background:#fff;padding:18px;border-radius:12px}
+    body { margin: 0; font-family: Arial, sans-serif; background: #fff; color: #333; }
+    header { background: #d4af37; color: white; padding: 20px; text-align: center; font-size: 28px; font-weight: bold; }
+    .banner img { width: 100%; height: 380px; object-fit: cover; }
+
+    .section { padding: 40px 20px; text-align: center; }
+    .section h2 { font-size: 28px; color: #d4af37; margin-bottom: 20px; }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 10px; }
+    .grid img { width: 100%; height: 320px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+    .btn { display: inline-block; background: #d4af37; color: white; padding: 12px 25px; border-radius: 6px; text-decoration: none; font-size: 18px; margin-top: 20px; }
+
+    footer { background: #111; color: white; text-align: center; padding: 20px; margin-top: 40px; }
   </style>
+  <!-- Logo -->
+  <link rel="icon" href="https://images.pexels.com/photos/10246440/pexels-photo-10246440.jpeg" />
 </head>
 <body>
-  <header class="site-header">
-    <h1>Meghan Fashion House</h1>
-    <p>Designer blouses • Lehengas • Gowns • Dresses — Women, Girls & Babies</p>
-  </header>
-  <nav class="site-nav">
-    <a href="#designs">Designs</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#book">Book Now</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <!-- Top Logo Section -->
+  <div style="text-align:center; padding:20px;">
+    <img src="https://images.pexels.com/photos/10246440/pexels-photo-10246440.jpeg" alt="Logo" style="width:120px; height:120px; border-radius:50%; object-fit:cover; box-shadow:0 4px 10px rgba(0,0,0,0.2);" />
+  </div>
+  <header>Meghan Fashion House</header>
 
-  <section class="hero">
-    <div class="inner">
-      <h2>Beautifully stitched, perfectly fitted — for women & girls</h2>
-      <div class="cta-row">
-        <button class="btn btn-primary" onclick="openModal()">Book a Fitting</button>
-        <a class="btn btn-ghost" href="#gallery">See Gallery</a>
-      </div>
-    </div>
-  </section>
+  <!-- Banner -->
+  <div class="banner">
+    <img src="https://images.pexels.com/photos/2869779/pexels-photo-2869779.jpeg" alt="Boutique Banner" />
+  </div>
 
-  <main class="container">
-    <section id="designs" class="designs">
-      <h3 class="section-title">Our Specialities</h3>
-      <div class="grid">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1556909212-390e8e2ac3f9?auto=format&fit=crop&w=1200&q=80" alt="Blouse designs for women">
-          <h4>Blouse Designs</h4>
-          <p>Traditional and modern blouse cutting, handwork and fitting — customizable.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1531928351158-2f736078e0e3?auto=format&fit=crop&w=1200&q=80" alt="Lehenga designs">
-          <h4>Lehengas & Bridal</h4>
-          <p>Heavy embroidery or light-day lehengas — crafted to your measurements.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1520974693722-25f4a45e7cd1?auto=format&fit=crop&w=1200&q=80" alt="Gowns and party wear">
-          <h4>Gowns & Party Wear</h4>
-          <p>Evening gowns, mother-of-the-bride dresses and party outfits with premium finishing.</p>
-        </div>
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80" alt="Kids and baby dresses">
-          <h4>Girls & Baby Fashion</h4>
-          <p>Comfortable, cute and safe stitching for babies and kids with soft linings.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery" style="margin-top:32px">
-      <h3 class="section-title">Gallery — Latest Work</h3>
-      <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1520975491514-9d7bd0f3b403?auto=format&fit=crop&w=800&q=80" alt="gallery1">
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" alt="gallery2">
-        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=800&q=80" alt="gallery3">
-        <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80" alt="gallery4">
-        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80" alt="gallery5">
-        <img src="https://images.unsplash.com/photo-1547586696-809c3a1f7c6f?auto=format&fit=crop&w=800&q=80" alt="gallery6">
-      </div>
-    </section>
-
-    <section id="reviews" style="margin-top:32px">
-      <h3 class="section-title">What Customers Say</h3>
-      <div class="reviews">
-        <!-- Placeholder testimonials: replace with Google Reviews embed once you have Google Business Profile -->
-        <div class="testimonial card">
-          <strong>Ritika S.</strong>
-          <p>"Loved my blouse stitching — perfect fit and fast delivery. Highly recommend Meghan Fashion House!"</p>
-        </div>
-        <div class="testimonial card">
-          <strong>Ananya P.</strong>
-          <p>"Beautiful lehenga finish and detailing. The team was very patient with fittings for my daughter."</p>
-        </div>
-        <div class="testimonial card">
-          <strong>Meera K.</strong>
-          <p>"Great quality, friendly staff and excellent finishing. Will come back for more."</p>
-        </div>
-      </div>
-      <p style="text-align:center;margin-top:12px;font-size:14px;color:#666">To show live Google Reviews on this page, connect your Google Business Profile — I can guide you step-by-step.</p>
-    </section>
-
-    <section id="book" style="margin-top:32px">
-      <h3 class="section-title">Book a Fitting</h3>
-      <div class="contact-grid">
-        <div class="contact-card">
-          <form id="bookingForm" action="https://formspree.io/f/your-form-id" method="POST">
-            <label>Name</label>
-            <input name="name" placeholder="Your name" required>
-            <label>Phone / WhatsApp</label>
-            <input name="phone" placeholder="+91 9XXXXXXXXX" required>
-            <label>Service</label>
-            <select name="service">
-              <option>Blouse stitching</option>
-              <option>Lehenga</option>
-              <option>Gown</option>
-              <option>Kids/Baby dress</option>
-            </select>
-            <label>Preferred date & time</label>
-            <input name="datetime" placeholder="e.g. 25 Dec 2025, 3:00 PM">
-            <label>Notes</label>
-            <textarea name="notes" rows="3" placeholder="Measurements, style reference, any notes"></textarea>
-            <div style="margin-top:12px;display:flex;gap:8px">
-              <button type="submit" class="btn btn-primary">Send Booking</button>
-              <a class="btn btn-ghost" href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat on WhatsApp</a>
-            </div>
-          </form>
-        </div>
-
-        <div class="contact-card">
-          <h4>Contact & Visit</h4>
-          <p><strong>Phone:</strong> +91 9353737776</p>
-          <p><strong>Email:</strong> info@meghanfashionhouse.com</p>
-          <p><strong>Address:</strong> Add your boutique address here</p>
-          <div style="margin-top:12px;border-radius:8px;overflow:hidden">
-            <!-- placeholder map: replace src with your Google Maps embed URL -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019111111111!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDU4JzQ2LjAiTiA3N8KwMzUnMDkuMCJF!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin" width="100%" height="220" style="border:0" allowfullscreen loading="lazy"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <a class="whatsapp-fixed" id="waBtn" href="https://wa.me/919353737776" target="_blank">Message Us on WhatsApp</a>
-
-  <div class="modal" id="bookingModal">
-    <div class="panel">
-      <h3>Book a Fitting</h3>
-      <form action="https://formspree.io/f/your-form-id" method="POST">
-        <input name="name" placeholder="Name" required>
-        <input name="phone" placeholder="Phone / WhatsApp" required>
-        <input name="service" placeholder="Service (e.g. Blouse)">
-        <div style="margin-top:12px;display:flex;gap:8px"><button class="btn btn-primary" type="submit">Send</button><button type="button" class="btn btn-ghost" onclick="closeModal()">Cancel</button></div>
-      </form>
+  <!-- Blouse Designs -->
+  <div class="section">
+    <h2>Designer Blouse Collection</h2>
+    <div class="grid">
+      <img src="https://images.pexels.com/photos/6540991/pexels-photo-6540991.jpeg" />
+      <img src="https://images.pexels.com/photos/11269903/pexels-photo-11269903.jpeg" />
+      <img src="https://images.pexels.com/photos/6541035/pexels-photo-6541035.jpeg" />
     </div>
   </div>
 
-  <footer class="site-footer">© 2025 Meghan Fashion House — All rights reserved</footer>
+  <!-- Lehenga Designs -->
+  <div class="section">
+    <h2>Lehenga Collection</h2>
+    <div class="grid">
+      <img src="https://images.pexels.com/photos/18728413/pexels-photo-18728413.jpeg" />
+      <img src="https://images.pexels.com/photos/18352480/pexels-photo-18352480.jpeg" />
+      <img src="https://images.pexels.com/photos/16142041/pexels-photo-16142041.jpeg" />
+    </div>
+  </div>
 
-  <script>
-    function openModal(){document.getElementById('bookingModal').classList.add('open')}
-    function closeModal(){document.getElementById('bookingModal').classList.remove('open')}
-    // Replace XXXXXXXXXX with your WhatsApp number in the HTML after download
-    // Formspree: replace action URL with your formspree endpoint or use email/mailto
-  </script>
+  <!-- Gowns -->
+  <div class="section">
+    <h2>Party & Bridal Gowns</h2>
+    <div class="grid">
+      <img src="https://images.pexels.com/photos/3083049/pexels-photo-3083049.jpeg" />
+      <img src="https://images.pexels.com/photos/322207/pexels-photo-322207.jpeg" />
+      <img src="https://images.pexels.com/photos/18352278/pexels-photo-18352278.jpeg" />
+    </div>
+  </div>
+
+  <!-- Kids Dresses -->
+  <div class="section">
+    <h2>Kids Fashion Collection</h2>
+    <div class="grid">
+      <img src="https://images.pexels.com/photos/1648379/pexels-photo-1648379.jpeg" />
+      <img src="https://images.pexels.com/photos/1616201/pexels-photo-1616201.jpeg" />
+      <img src="https://images.pexels.com/photos/1122952/pexels-photo-1122952.jpeg" />
+    </div>
+  </div>
+
+  <!-- WhatsApp Button -->
+  <div class="section">
+    <a class="btn" href="https://wa.me/91XXXXXXXXXX" target="_blank">Chat on WhatsApp</a>
+  </div>
+
+    <!-- Reviews Section -->
+  <div class="section" style="background:#f7f2f5;">
+    <h2>Customer Reviews</h2>
+    <p>⭐⭐⭐⭐⭐ "Beautiful stitching and perfect fitting!"</p>
+    <p>⭐⭐⭐⭐⭐ "Best boutique for bridal blouses!"</p>
+    <p>⭐⭐⭐⭐⭐ "Kids dress quality is amazing!"</p>
+    <a class="btn" href="https://g.page/r/CODE" target="_blank">View More on Google</a>
+  </div>
+
+<footer>
+    © 2025 Meghan Fashion House — Custom Stitching | Bridal Wear | Designer Outfits
+  </footer>
+  <!-- Bridal Gallery -->
+  <div class="section">
+    <h2>Bridal Collection</h2>
+    <div class="grid">
+      <img src="https://images.pexels.com/photos/5412320/pexels-photo-5412320.jpeg" />
+      <img src="https://images.pexels.com/photos/10246467/pexels-photo-10246467.jpeg" />
+      <img src="https://images.pexels.com/photos/1485696/pexels-photo-1485696.jpeg" />
+    </div>
+  </div>
+
+  <!-- Aari Work Section -->
+  <div class="section" style="background:#fff7e6;">
+    <h2>Aari & Maggam Work</h2>
+    <p>Premium handwork designs for bridal and festive blouses.</p>
+    <div class="grid">
+      <img src="https://images.pexels.com/photos/6540991/pexels-photo-6540991.jpeg" />
+      <img src="https://images.pexels.com/photos/6541035/pexels-photo-6541035.jpeg" />
+      <img src="https://images.pexels.com/photos/11269903/pexels-photo-11269903.jpeg" />
+    </div>
+  </div>
+
+  <!-- Booking Form -->
+  <div class="section">
+    <h2>Book Your Stitching Appointment</h2>
+    <form style="max-width:400px;margin:auto;text-align:left;">
+      <label>Name:</label><br>
+      <input type="text" style="width:100%;padding:10px;margin:8px 0;">
+      <label>Phone:</label><br>
+      <input type="text" style="width:100%;padding:10px;margin:8px 0;">
+      <label>Service Needed:</label><br>
+      <select style="width:100%;padding:10px;margin:8px 0;">
+        <option>Blouse Stitching</option>
+        <option>Lehenga Stitching</option>
+        <option>Gown Stitching</option>
+        <option>Aari/Maggam Work</option>
+      </select>
+      <button class="btn" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- About Us -->
+  <div class="section" style="background:#fff2e6;">
+    <h2>About Us</h2>
+    <p>Meghan Fashion House specialises in designer blouse tailoring, bridal wear, lehengas, gowns, kids wear & premium Aari/Maggam handwork. We focus on perfect fitting and premium finishing.</p>
+  </div>
+
+  <!-- Contact & Map -->
+  <div class="section">
+    <h2>Contact Us</h2>
+    <p>Address: Bengaluru, Karnataka</p>
+    <iframe src="https://www.google.com/maps?q=Bengaluru&output=embed" width="100%" height="300" style="border:0;border-radius:10px;"></iframe>
+  </div>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/919353737776" style="position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:15px;border-radius:50%;font-size:24px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,0.3);">💬</a>
+
 </body>
-        </html>
+</html>
